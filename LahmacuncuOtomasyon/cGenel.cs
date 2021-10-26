@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +9,12 @@ using System.Windows.Forms;
 
 namespace LahmacuncuOtomasyon
 {
-    public partial class frmGiris : Form
+    class cGenel
     {
-        public frmGiris()
-        {
-            InitializeComponent();
-        }
+        public string conString = (@"Data Source=MSI\SQLEXPRESS;Initial Catalog=LahmacuncuApp;Integrated Security=True");
+
+        public int _personelId;
+
+
     }
 }

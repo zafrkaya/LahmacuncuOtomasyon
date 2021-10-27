@@ -37,7 +37,7 @@ namespace LahmacuncuOtomasyon
         public bool PersonelEntryControl(string password, int userId)
         {
             bool result = false;
-            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlConnection con = new SqlConnection(cGenel.conString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM Personeller WHERE Id =@Id and Parola=@Password", con);
             cmd.Parameters.Add("@Id", SqlDbType.VarChar).Value = userId;
             cmd.Parameters.Add("Password", SqlDbType.VarChar).Value = password;
@@ -61,7 +61,7 @@ namespace LahmacuncuOtomasyon
         {
             cb.Items.Clear();
 
-            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlConnection con = new SqlConnection(cGenel.conString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM Personeller", con);
 
             if (con.State == ConnectionState.Closed)

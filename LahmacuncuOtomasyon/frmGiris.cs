@@ -30,6 +30,12 @@ namespace LahmacuncuOtomasyon
 
             if (result)
             {
+                cPersonelHareketleri ch = new cPersonelHareketleri();
+                ch.PersonelId = cGenel._personelId;
+                ch.Islem = "Giriş yaptı";
+                ch.Tarih = DateTime.Now;
+                ch.PersonelActionSave(ch);
+
                 this.Hide();
                 frmMenu menu = new frmMenu();
                 menu.Show();
@@ -39,7 +45,11 @@ namespace LahmacuncuOtomasyon
 
         private void btnCikis_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Çıkmak istediğinizden emin misiniz?","Uyarı",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            
         }
 
         private void frmGiris_Load(object sender, EventArgs e)

@@ -91,7 +91,7 @@ namespace LahmacuncuOtomasyon
         }
         public override string ToString()
         {
-            return PersonelAd;
+            return PersonelAd + " " + PersonelSoyad;
         }
     }
 }

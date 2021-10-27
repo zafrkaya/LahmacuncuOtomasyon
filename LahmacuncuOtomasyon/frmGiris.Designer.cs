@@ -46,6 +46,7 @@ namespace LahmacuncuOtomasyon
             this.txtSifre.Size = new System.Drawing.Size(196, 26);
             this.txtSifre.TabIndex = 2;
             this.txtSifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSifre.UseSystemPasswordChar = true;
             // 
             // cbKullanici
             // 
@@ -56,6 +57,7 @@ namespace LahmacuncuOtomasyon
             this.cbKullanici.Name = "cbKullanici";
             this.cbKullanici.Size = new System.Drawing.Size(196, 26);
             this.cbKullanici.TabIndex = 3;
+            this.cbKullanici.SelectedIndexChanged += new System.EventHandler(this.cbKullanici_SelectedIndexChanged);
             // 
             // btnGiris
             // 

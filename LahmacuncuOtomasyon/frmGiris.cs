@@ -26,7 +26,7 @@ namespace LahmacuncuOtomasyon
         private void btnGiris_Click_1(object sender, EventArgs e)
         {
             cPersoneller p = new cPersoneller();
-            bool result = p.PersonelEntryControl(txtSifre.Text,gnl._personelId);
+            bool result = p.PersonelEntryControl(txtSifre.Text,cGenel._personelId);
 
             if (result)
             {
@@ -46,6 +46,13 @@ namespace LahmacuncuOtomasyon
         {
             cPersoneller p = new cPersoneller();
             p.GetPersonelInformationByName(cbKullanici);
+        }
+
+        private void cbKullanici_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cPersoneller p = (cPersoneller)cbKullanici.SelectedItem;
+            cGenel._personelId = p.PersonelId;
+            cGenel._gorevId = p.PersonelGorevId;
         }
     }
 }

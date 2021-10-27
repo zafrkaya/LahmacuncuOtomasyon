@@ -13,7 +13,8 @@ namespace LahmacuncuOtomasyon
     {
         public string conString = (@"Data Source=MSI\SQLEXPRESS;Initial Catalog=LahmacuncuApp;Integrated Security=True");
 
-        public int _personelId;
+        public static int _personelId;
+        public static int _gorevId;
 
 
     }

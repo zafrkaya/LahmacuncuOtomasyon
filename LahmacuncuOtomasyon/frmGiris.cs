@@ -27,10 +27,10 @@ namespace LahmacuncuOtomasyon
         {
             cPersoneller p = new cPersoneller();
             bool result = p.PersonelEntryControl(txtSifre.Text,cGenel._personelId);
-
+            cPersonelHareketleri ch = new cPersonelHareketleri();
             if (result)
             {
-                cPersonelHareketleri ch = new cPersonelHareketleri();
+                
                 ch.PersonelId = cGenel._personelId;
                 ch.Islem = "Giriş yaptı";
                 ch.Tarih = DateTime.Now;
@@ -39,6 +39,14 @@ namespace LahmacuncuOtomasyon
                 this.Hide();
                 frmMenu menu = new frmMenu();
                 menu.Show();
+            }
+            else
+            {
+                ch.PersonelId = cGenel._personelId;
+                ch.Islem = "Şifreyi hatalı girdi.";
+                ch.Tarih = DateTime.Now;
+                ch.PersonelActionSave(ch);
+                MessageBox.Show("Hatalı şifre!", "Uyarı",MessageBoxButtons.OK ,MessageBoxIcon.Warning);
             }
 
         }

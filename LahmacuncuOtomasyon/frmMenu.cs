@@ -17,11 +17,17 @@ namespace LahmacuncuOtomasyon
             InitializeComponent();
         }
 
+        cPersonelHareketleri ch = new cPersonelHareketleri();
         private void btnMasa_Click(object sender, EventArgs e)
         {
             frmMasalar masa = new frmMasalar();
             masa.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Masalar sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void btnRezervasyon_Click(object sender, EventArgs e)
@@ -29,6 +35,11 @@ namespace LahmacuncuOtomasyon
             frmRezervasyon frmRez = new frmRezervasyon();
             this.Close();
             frmRez.Show();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Rezervasyonlar sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void btnPaketServis_Click(object sender, EventArgs e)
@@ -36,6 +47,11 @@ namespace LahmacuncuOtomasyon
             frmPaketServis frmPaketServis = new frmPaketServis();
             frmPaketServis.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Paket Servis sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,6 +59,11 @@ namespace LahmacuncuOtomasyon
             frmMusteriler musteriler = new frmMusteriler();
             musteriler.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Müşteriler sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -50,6 +71,11 @@ namespace LahmacuncuOtomasyon
             frmMutfak mutfak = new frmMutfak();
             mutfak.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Mutfak sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +83,11 @@ namespace LahmacuncuOtomasyon
             frmKasaIslemler frmKasaIslemler = new frmKasaIslemler();
             frmKasaIslemler.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Kasalar sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void btnRaporlar_Click(object sender, EventArgs e)
@@ -64,6 +95,11 @@ namespace LahmacuncuOtomasyon
             frmRaporlar frmRaporlar = new frmRaporlar();
             frmRaporlar.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Raporlar sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void btnAyarlar_Click(object sender, EventArgs e)
@@ -71,6 +107,11 @@ namespace LahmacuncuOtomasyon
             frmAyarlar frmAyarlar = new frmAyarlar();
             frmAyarlar.Show();
             this.Close();
+
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = "Ayarlar sayfasına giriş yaptı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -78,6 +119,11 @@ namespace LahmacuncuOtomasyon
             if (MessageBox.Show("Çıkmak istediğinizden emin misiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
+
+                ch.PersonelId = cGenel._personelId;
+                ch.Islem = "Menü sayfası üzerinden çıkış yaptı.";
+                ch.Tarih = DateTime.Now;
+                ch.PersonelActionSave(ch);
             }
         }
     }

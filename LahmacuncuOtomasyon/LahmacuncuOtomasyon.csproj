@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="cGenel.cs" />
     <Compile Include="cPersonelHareketleri.cs" />
+    <Compile Include="frmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlar.Designer.cs">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,16 +61,61 @@
       <DependentUpon>frmGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="cPersoneller.cs" />
+    <Compile Include="frmKasaIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKasaIslemler.Designer.cs">
+      <DependentUpon>frmKasaIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasalar.Designer.cs">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMutfak.Designer.cs">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaketServis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaketServis.Designer.cs">
+      <DependentUpon>frmPaketServis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaporlar.Designer.cs">
+      <DependentUpon>frmRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyon.Designer.cs">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGiris.resx">
       <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasalar.resx">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>

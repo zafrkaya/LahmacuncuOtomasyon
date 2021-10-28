@@ -64,6 +64,7 @@ namespace LahmacuncuOtomasyon
         {
             cPersoneller p = new cPersoneller();
             p.GetPersonelInformationByName(cbKullanici);
+            
         }
 
         private void cbKullanici_SelectedIndexChanged(object sender, EventArgs e)

@@ -207,7 +207,7 @@ namespace LahmacuncuOtomasyon
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(92, 328);
+            this.button9.Location = new System.Drawing.Point(92, 344);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(54, 45);
             this.button9.TabIndex = 11;
@@ -223,7 +223,7 @@ namespace LahmacuncuOtomasyon
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(27, 328);
+            this.button10.Location = new System.Drawing.Point(27, 344);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(52, 45);
             this.button10.TabIndex = 12;
@@ -335,18 +335,18 @@ namespace LahmacuncuOtomasyon
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(179, 328);
+            this.panel1.Location = new System.Drawing.Point(166, 344);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(444, 45);
+            this.panel1.Size = new System.Drawing.Size(457, 45);
             this.panel1.TabIndex = 15;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(398, 290);
+            this.pictureBox1.Location = new System.Drawing.Point(310, 294);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(64, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;

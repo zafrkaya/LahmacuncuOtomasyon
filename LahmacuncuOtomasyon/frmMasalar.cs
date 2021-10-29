@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -145,7 +146,66 @@ namespace LahmacuncuOtomasyon
 
         private void frmMasalar_Load(object sender, EventArgs e)
         {
-            
+
+            SqlConnection con = new SqlConnection(cGenel.conString);
+            SqlCommand cmd = new SqlCommand("SELECT Durum,Id FROM [LahmacuncuApp].[dbo].[Masalar]", con);
+            SqlDataReader dr = null;
+
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                foreach (Control item in this.Controls)
+                {
+                    if (item is Button)
+                    {
+
+
+                        if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "1")
+                        {
+                            item.BackColor = Color.Gold;
+                        }
+                        
+                        
+                        else if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "2")
+                        {
+                            cMasalar ms = new cMasalar();
+                            DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2));
+                            DateTime dt2 = DateTime.Now;
+
+                            string st1 = Convert.ToDateTime(ms.SessionSum(2)).ToShortTimeString();
+                            string st2 = DateTime.Now.ToShortTimeString();
+
+                            DateTime t1 = dt1.AddMinutes(DateTime.Parse(st1).TimeOfDay.TotalMinutes);
+                            DateTime t2 = dt1.AddMinutes(DateTime.Parse(st2).TimeOfDay.TotalMinutes);
+
+                            var fark = t2 - t1;
+
+                            //item.Text = string.Format("{0},{1},{2}",
+                            //    fark.Days > 0 ? string.Format("{0} Gün", fark.Days) : "",
+                            //    fark.Hours > 0 ? string.Format("{0} Saat", fark.Hours) : "",
+                            //    fark.Minutes > 0 ? string.Format("{0} Dakika", fark.Minutes) : "").Trim() + "\n\n\nMasa" + dr["ID"].ToString();
+                            item.BackColor = Color.Red;
+                        }
+
+
+                        else if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "3")
+                        {
+                            item.BackColor = Color.CadetBlue;
+                        }
+
+
+                        else if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "4")
+                        {
+                            item.BackColor = Color.Maroon;
+                        }
+                    }
+                }
+            }
         }
     }
 }

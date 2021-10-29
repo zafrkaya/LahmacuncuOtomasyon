@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cGenel.cs" />
+    <Compile Include="cMasalar.cs" />
     <Compile Include="cPersonelHareketleri.cs" />
     <Compile Include="frmAyarlar.cs">
       <SubType>Form</SubType>

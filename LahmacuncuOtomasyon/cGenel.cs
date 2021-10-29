@@ -16,6 +16,9 @@ namespace LahmacuncuOtomasyon
         public static int _personelId;
         public static int _gorevId;
 
+        public static string _buttonValue;
+        public static string _buttonName;
+
 
     }
 }

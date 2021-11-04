@@ -187,10 +187,10 @@ namespace LahmacuncuOtomasyon
                             var fark = t2 - t1;
 
                             //Masa doluluk süresi tooltip'e basılıyor.
-                            toolTip1.SetToolTip(item, string.Format("{0},{1},{2}",
-                                fark.Days > 0 ? string.Format("{0} Gün\n", fark.Days) : "",
-                                fark.Hours > 0 ? string.Format("{0} Saat\n", fark.Hours) : "",
-                                fark.Minutes > 0 ? string.Format("{0} Dakika\n", fark.Minutes) : "").Trim());
+                            toolTip1.SetToolTip(item, string.Format("{0} {1} {2}",
+                                fark.Days > 0 ? string.Format("{0} Gün", fark.Days) : "",
+                                fark.Hours > 0 ? string.Format("{0} Saat", fark.Hours) : "",
+                                fark.Minutes > 0 ? string.Format("{0} Dakikadır dolu.", fark.Minutes) : "").Trim());
                             item.BackColor = Color.Red;
 
                         }

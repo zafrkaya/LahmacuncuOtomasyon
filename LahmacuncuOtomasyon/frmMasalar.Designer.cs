@@ -361,7 +361,7 @@ namespace LahmacuncuOtomasyon
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ReshowDelay = 20;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Masa Süres:";
+            this.toolTip1.ToolTipTitle = "Masa Süresi:";
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
             // frmMasalar

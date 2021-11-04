@@ -169,10 +169,11 @@ namespace LahmacuncuOtomasyon
                         {
                             item.BackColor = Color.Gold;
                         }
-                        
-                        
+
+
                         else if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "2")
                         {
+                            //Masa ne kadar süredir dolu hesaplanıyor.
                             cMasalar ms = new cMasalar();
                             DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2));
                             DateTime dt2 = DateTime.Now;
@@ -185,11 +186,13 @@ namespace LahmacuncuOtomasyon
 
                             var fark = t2 - t1;
 
-                            //item.Text = string.Format("{0},{1},{2}",
-                            //    fark.Days > 0 ? string.Format("{0} Gün", fark.Days) : "",
-                            //    fark.Hours > 0 ? string.Format("{0} Saat", fark.Hours) : "",
-                            //    fark.Minutes > 0 ? string.Format("{0} Dakika", fark.Minutes) : "").Trim() + "\n\n\nMasa" + dr["ID"].ToString();
+                            //Masa doluluk süresi tooltip'e basılıyor.
+                            toolTip1.SetToolTip(item, string.Format("{0},{1},{2}",
+                                fark.Days > 0 ? string.Format("{0} Gün\n", fark.Days) : "",
+                                fark.Hours > 0 ? string.Format("{0} Saat\n", fark.Hours) : "",
+                                fark.Minutes > 0 ? string.Format("{0} Dakika\n", fark.Minutes) : "").Trim());
                             item.BackColor = Color.Red;
+
                         }
 
 
@@ -206,6 +209,11 @@ namespace LahmacuncuOtomasyon
                     }
                 }
             }
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
         }
     }
 }

@@ -48,7 +48,7 @@ namespace LahmacuncuOtomasyon
             this.txtSifre.Multiline = true;
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(196, 28);
-            this.txtSifre.TabIndex = 2;
+            this.txtSifre.TabIndex = 1;
             this.txtSifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSifre.UseSystemPasswordChar = true;
             // 
@@ -60,7 +60,7 @@ namespace LahmacuncuOtomasyon
             this.cbKullanici.Location = new System.Drawing.Point(49, 188);
             this.cbKullanici.Name = "cbKullanici";
             this.cbKullanici.Size = new System.Drawing.Size(196, 26);
-            this.cbKullanici.TabIndex = 3;
+            this.cbKullanici.TabIndex = 0;
             this.cbKullanici.SelectedIndexChanged += new System.EventHandler(this.cbKullanici_SelectedIndexChanged);
             // 
             // btnGiris
@@ -76,7 +76,7 @@ namespace LahmacuncuOtomasyon
             this.btnGiris.Location = new System.Drawing.Point(49, 289);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(94, 35);
-            this.btnGiris.TabIndex = 5;
+            this.btnGiris.TabIndex = 2;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGiris.UseVisualStyleBackColor = false;
@@ -95,7 +95,7 @@ namespace LahmacuncuOtomasyon
             this.btnCikis.Location = new System.Drawing.Point(156, 289);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(89, 35);
-            this.btnCikis.TabIndex = 4;
+            this.btnCikis.TabIndex = 3;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCikis.UseVisualStyleBackColor = false;

@@ -76,7 +76,8 @@ namespace LahmacuncuOtomasyon
         {
             cPersoneller p = new cPersoneller();
             p.GetPersonelInformationByName(cbKullanici);
-            
+            cbKullanici.SelectedIndex = 0;
+
         }
 
         private void cbKullanici_SelectedIndexChanged(object sender, EventArgs e)
@@ -84,6 +85,7 @@ namespace LahmacuncuOtomasyon
             cPersoneller p = (cPersoneller)cbKullanici.SelectedItem;
             cGenel._personelId = p.PersonelId;
             cGenel._gorevId = p.PersonelGorevId;
+            
         }
     }
 }

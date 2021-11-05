@@ -44,7 +44,7 @@ namespace LahmacuncuOtomasyon
 
         private void btnPaketServis_Click(object sender, EventArgs e)
         {
-            frmPaketServis frmPaketServis = new frmPaketServis();
+            frmSiparis frmPaketServis = new frmSiparis();
             frmPaketServis.Show();
             this.Close();
 

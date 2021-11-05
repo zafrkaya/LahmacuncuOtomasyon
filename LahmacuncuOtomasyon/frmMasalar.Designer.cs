@@ -250,7 +250,7 @@ namespace LahmacuncuOtomasyon
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(175, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 19);
@@ -262,7 +262,7 @@ namespace LahmacuncuOtomasyon
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label3.ForeColor = System.Drawing.Color.YellowGreen;
             this.label3.Location = new System.Drawing.Point(388, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 19);
@@ -284,6 +284,7 @@ namespace LahmacuncuOtomasyon
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.CadetBlue;
+            this.button1.Enabled = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.DarkCyan;
             this.button1.Location = new System.Drawing.Point(13, 12);
@@ -294,7 +295,8 @@ namespace LahmacuncuOtomasyon
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.Color.DarkCyan;
             this.button2.Location = new System.Drawing.Point(157, 12);
@@ -305,7 +307,8 @@ namespace LahmacuncuOtomasyon
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.button3.BackColor = System.Drawing.Color.YellowGreen;
+            this.button3.Enabled = false;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.Color.DarkCyan;
             this.button3.Location = new System.Drawing.Point(371, 12);
@@ -317,6 +320,7 @@ namespace LahmacuncuOtomasyon
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Enabled = false;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.ForeColor = System.Drawing.Color.DarkCyan;
             this.button4.Location = new System.Drawing.Point(270, 13);
@@ -361,7 +365,8 @@ namespace LahmacuncuOtomasyon
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ReshowDelay = 20;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Masa Süresi:";
+            this.toolTip1.ToolTipTitle = "Masa Bilgisi:";
+            this.toolTip1.UseFading = false;
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
             // frmMasalar

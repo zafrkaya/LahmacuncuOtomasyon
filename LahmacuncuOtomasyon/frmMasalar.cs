@@ -21,11 +21,18 @@ namespace LahmacuncuOtomasyon
         cPersonelHareketleri ch = new cPersonelHareketleri();
         private void btnMasa1_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa1.Text.Length;
 
             cGenel._buttonValue = btnMasa1.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa1.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
 
@@ -58,88 +65,144 @@ namespace LahmacuncuOtomasyon
 
         private void btnMasa2_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa2.Text.Length;
 
             cGenel._buttonValue = btnMasa2.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa2.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa3_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa3.Text.Length;
 
             cGenel._buttonValue = btnMasa3.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa3.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa4_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa4.Text.Length;
 
             cGenel._buttonValue = btnMasa4.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa4.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa5_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa5.Text.Length;
 
             cGenel._buttonValue = btnMasa5.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa5.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa6_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa6.Text.Length;
 
             cGenel._buttonValue = btnMasa6.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa6.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa7_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa7.Text.Length;
 
             cGenel._buttonValue = btnMasa7.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa7.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa8_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa8.Text.Length;
 
             cGenel._buttonValue = btnMasa8.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa8.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
 
         private void btnMasa9_Click(object sender, EventArgs e)
         {
-            frmPaketServis frm = new frmPaketServis();
+            frmSiparis frm = new frmSiparis();
             int uzunluk = btnMasa9.Text.Length;
 
             cGenel._buttonValue = btnMasa9.Text.Substring(uzunluk - 6, 6);
             cGenel._buttonName = btnMasa9.Name;
+
+            //Loglama
+            ch.PersonelId = cGenel._personelId;
+            ch.Islem = cGenel._buttonValue.ToString() + " sipariş sayfasını açtı.";
+            ch.Tarih = DateTime.Now;
+            ch.PersonelActionSave(ch);
+
             this.Close();
             frm.ShowDialog();
         }
@@ -167,7 +230,9 @@ namespace LahmacuncuOtomasyon
 
                         if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "1")
                         {
-                            item.BackColor = Color.Gold;
+                            item.BackColor = Color.YellowGreen;
+                            item.ForeColor = Color.Black;
+                            toolTip1.SetToolTip(item, "Boş Masa");
                         }
 
 
@@ -187,8 +252,7 @@ namespace LahmacuncuOtomasyon
                             var fark = t2 - t1;
 
                             //Masa doluluk süresi tooltip'e basılıyor.
-                            toolTip1.SetToolTip(item, string.Format("{0} {1} {2}",
-                                fark.Days > 0 ? string.Format("{0} Gün", fark.Days) : "",
+                            toolTip1.SetToolTip(item, string.Format("{0} {1}",                                
                                 fark.Hours > 0 ? string.Format("{0} Saat", fark.Hours) : "",
                                 fark.Minutes > 0 ? string.Format("{0} Dakikadır dolu.", fark.Minutes) : "").Trim());
                             item.BackColor = Color.Red;
@@ -199,12 +263,15 @@ namespace LahmacuncuOtomasyon
                         else if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "3")
                         {
                             item.BackColor = Color.CadetBlue;
+                            toolTip1.SetToolTip(item, "Açık Rezerve");
                         }
 
 
                         else if (item.Name == "btnMasa" + dr["Id"].ToString() && dr["Durum"].ToString() == "4")
                         {
-                            item.BackColor = Color.Maroon;
+                            item.BackColor = Color.DarkOrange;
+                            item.ForeColor = Color.Black;
+                            toolTip1.SetToolTip(item, "Rezerve Edilmiş.");
                         }
                     }
                 }
